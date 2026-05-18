@@ -78,7 +78,7 @@ data:
 
       # Header customisation via global header plugin
       - disabled: false
-        package: ./dynamic-plugins/dist/red-hat-developer-hub-backstage-plugin-global-header
+        package: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-global-header:bs_1.45.3__1.20.1
         pluginConfig:
           app:
             sidebar:
