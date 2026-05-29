@@ -116,6 +116,9 @@ data:
             schedule:
               frequency: { minutes: 5 }
               timeout: { minutes: 3 }
+        ocm:
+          env:
+            kubernetesPluginRef: hub-cluster
 
     argocd:
       appLocatorMethods:
@@ -131,7 +134,7 @@ data:
         type: multiTenant
       clusterLocatorMethods:
         - clusters:
-            - name: dev-cluster
+            - name: hub-cluster
               url: {{ .Values.kubernetes.apiUrl }}
               authProvider: serviceAccount
               skipTLSVerify: true
