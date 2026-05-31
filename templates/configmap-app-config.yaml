@@ -116,12 +116,6 @@ data:
             schedule:
               frequency: { minutes: 5 }
               timeout: { minutes: 3 }
-        ocm:
-          env:
-            kubernetesPluginRef: hub-cluster
-            schedule:
-              frequency: { minutes: 5 }
-              timeout: { minutes: 2 }
 
     argocd:
       appLocatorMethods:

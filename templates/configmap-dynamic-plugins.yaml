@@ -78,9 +78,3 @@ data:
                     menuItem:
                       text: Icon viewer
       {{- end }}
-
-      # OCM plugins for automatic kubernetes cluster resource discovery
-      - disabled: false
-        package: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-ocm:bs_1.45.3__5.11.1
-      - disabled: false
-        package: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-ocm-backend:bs_1.45.3__5.12.2
