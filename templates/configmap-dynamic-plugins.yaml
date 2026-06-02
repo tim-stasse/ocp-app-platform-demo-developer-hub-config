@@ -76,3 +76,7 @@ data:
                     menuItem:
                       text: Icon viewer
       {{- end }}
+
+      # Custom plugin for kubernetes template scaffolder actions
+      - package: oci://quay.io/tstasse/devangelista-backstage-scaffolder-kubernetes:0.6.2
+        disabled: false
