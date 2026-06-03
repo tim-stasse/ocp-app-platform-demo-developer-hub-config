@@ -306,8 +306,17 @@ data:
                   link: https://sonarqube-sonarqube.{{ .Values.cluster.subdomain }}
         red-hat-developer-hub.backstage-plugin-lightspeed:
           mountPoints:
+            - mountPoint: application/listener
+              importName: LightspeedFAB
             - mountPoint: application/provider
-              importName: LightspeedProvider
+              importName: LightspeedDrawerProvider
+            - mountPoint: application/internal/drawer-state
+              importName: LightspeedDrawerStateExposer
+            - mountPoint: application/internal/drawer-content
+              importName: LightspeedChatContainer
+              config:
+                id: lightspeed
+                priority: 100
           appIcons:
             - name: LightspeedIcon
               module: LightspeedPlugin
